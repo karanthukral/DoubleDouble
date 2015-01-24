@@ -4,6 +4,7 @@ Rails.application.routes.draw do
     root to: "devise/sessions#new"
     match '/sign_up', to:"users/registrations#new", via: "get"
   end
+  match '/new_drink', to:"drinks#new", via:"get"
   devise_for :users, controllers: { sessions: "users/sessions",
                                     registrations: "users/registrations" }
   # The priority is based upon order of creation: first created -> highest priority.

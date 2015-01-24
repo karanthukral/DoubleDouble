@@ -6,5 +6,4 @@ class User < ActiveRecord::Base
   has_many :drinks
   validates :first_name, presence: true
   validates :last_name, presence: true
-  validates :user_id, presence: true
 end

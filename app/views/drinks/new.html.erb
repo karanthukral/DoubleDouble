@@ -1,0 +1,17 @@
+<h1> New Drink </h1>
+<%= form_for(@drink) do |f| %>
+	<div class="field">
+    	<%= f.label :size %><br />
+    	<%= f.text_field :size, autofocus: true %>
+  	</div>
+
+  	<div class="field">
+    	<%= f.label :location %><br />
+    	<%= f.text_field :location, autofocus: true %>
+  	</div>
+
+  	<div class="actions">
+    	<%= f.submit "Add" %>
+  	</div>
+
+<% end %>

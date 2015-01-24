@@ -4,7 +4,6 @@ class CreateDrinks < ActiveRecord::Migration
     	t.string :name
     	t.string :size
     	t.string :location
-    	t.integer :user_id
     	t.timestamps null: false
     end
     add_index :drinks, :user_id
