@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   resources :drinks
   devise_scope :user do
-    root to: "devise/sessions#new"
+    root to: "users/sessions#new"
     match '/sign_up', to:"users/registrations#new", via: "get"
   end
   match '/new_drink', to:"drinks#new", via:"get"

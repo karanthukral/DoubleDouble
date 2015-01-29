@@ -1,0 +1,30 @@
+/*@import "bootstrap-sprockets";*/
+@import "bootstrap";
+
+.websiteTitle
+{
+	text-align: center;
+}
+
+.sign_in_form
+{
+	text-align: center;
+	& .email_field
+	{
+ 		/* mozilla */
+ 		-moz-border-radius:7px;
+ 		/* webkit */
+ 		-webkit-border-radius:7px;
+ 		min-width: 30%;
+ 		max-width: 50%;
+ 		&:focus
+ 		{
+ 			outline: none;
+ 		}
+	}
+}
+
+.shared_links
+{
+	text-align: center;
+}

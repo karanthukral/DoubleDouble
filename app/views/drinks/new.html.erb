@@ -1,9 +1,11 @@
 <h1> New Drink </h1>
-<%= form_for(@drink) do |f| %>
-	<div class="field">
-    	<%= f.label :size %><br />
-    	<%= f.text_field :size, autofocus: true %>
-  	</div>
+ <%= form_for @drink, :html => {:class => "form-horizontal center"} do |f| %>
+	<div class="field form-group">
+    	<%= f.label :size, class: "col-md-4 control-label" %><br/>
+      <div class="col-md-8">
+    	 <%= f.text_field :size, autofocus: true, class: "form-control"  %>
+      </div>
+  </div>
 
   	<div class="field">
     	<%= f.label :location %><br />
