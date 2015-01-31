@@ -9,6 +9,7 @@ class Users::SessionsController < Devise::SessionsController
   # POST /resource/sign_in
   # def create
   #   super
+  #   redirect_to new_drink_path
   # end
 
   # DELETE /resource/sign_out
@@ -16,7 +17,12 @@ class Users::SessionsController < Devise::SessionsController
   #   super
   # end
 
-  # protected
+  protected
+
+  def after_sign_in_path_for(resource)
+    binding.pry
+      '/new_drink'
+  end
 
   # You can put the params you want to permit in the empty array.
   # def configure_sign_in_params

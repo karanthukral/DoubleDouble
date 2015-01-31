@@ -7,30 +7,24 @@
 		<title>Double Double</title>
 	</head>
 	<body>
-		<!-- Header -->
-		<div class="container">
-			<div class="banner">
-				<div class="row">
-					<div class="col-xs-12 websiteTitle">
-						<h1>Double Double</h1>
-					</div>
-				</div>
-			</div>
+	
+		<div class="col-lg-4 websiteTitle">
+			<h3> Double Double </h3>
 		</div>
 
-		<%= form_for(resource, as: resource_name, url: session_path(resource_name), :html => {:class => "sign_in_form col-xs-12"}) do |f| %>
+		<%= form_for(resource, as: resource_name, url: session_path(resource_name), :html => {:class => "sign_in_form col-lg-6"}) do |f| %>
  			<div class="field">
-    			<%= f.label :email %><br />
+    			<%= f.label :email, class: "email_label" %>
     			<%= f.email_field :email, autofocus: true, class: "email_field" %>
   			</div>
 
   			<div class="field">
-    			<%= f.label :password %><br />
-    			<%= f.password_field :password, autocomplete: "off" %>
+    			<%= f.label :password %>
+    			<%= f.password_field :password, autocomplete: "off", class: "pass_field" %>
   			</div>
 
   			<% if devise_mapping.rememberable? -%>
-    			<div class="field">
+    			<div class="field remember_me">
       				<%= f.check_box :remember_me %>
       				<%= f.label :remember_me %>
     			</div>
@@ -40,7 +34,7 @@
     			<%= f.submit "Log in" %>
   			</div>
 		<% end %>
-		<div class="shared_links">
+		<div class="shared_links col-lg-2">
 			<%= render "users/shared/links" %>
 		</div>
 	</body>

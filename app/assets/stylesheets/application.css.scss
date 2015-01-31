@@ -3,28 +3,59 @@
 
 .websiteTitle
 {
+	padding-top: 3em;
 	text-align: center;
 }
 
 .sign_in_form
 {
+	padding-top: 3em;
 	text-align: center;
+
+	& .email_label
+	{
+		padding-right: 2em;
+	}
+
 	& .email_field
 	{
- 		/* mozilla */
- 		-moz-border-radius:7px;
- 		/* webkit */
- 		-webkit-border-radius:7px;
- 		min-width: 30%;
- 		max-width: 50%;
+ 		min-width: 25%;
+ 		max-width: 35%;
  		&:focus
  		{
  			outline: none;
  		}
 	}
+	& .pass_field
+	{
+		min-width: 25%;
+ 		max-width: 35%;
+ 		&:focus
+ 		{
+ 			outline: none;
+ 		}
+	}
+
+	& .radio_button
+	{
+		padding-right:1em;
+		padding-left: 1em;
+	}
+}
+
+.new_drink_form
+{
+	text-align:center;
+}
+
+.new_drink_header
+{
+	text-align:center;
+	padding-bottom: 2.5em;
 }
 
 .shared_links
 {
+	padding-top: 3.5em;
 	text-align: center;
 }
