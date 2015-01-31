@@ -20,8 +20,7 @@ class Users::SessionsController < Devise::SessionsController
   protected
 
   def after_sign_in_path_for(resource)
-    binding.pry
-      '/new_drink'
+    '/new_drink'
   end
 
   # You can put the params you want to permit in the empty array.

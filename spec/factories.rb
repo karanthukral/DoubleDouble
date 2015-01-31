@@ -8,9 +8,9 @@ FactoryGirl.define do
 	end 
 
 	factory :drink do
-		sequence(:user) {|n| User.all.sample}
+		sequence(:user) {|n| User.all.first}
 		sequence(:size) {|n| ["small", "medium", "large", "other"].sample}
 		sequence(:location) {|n| ["tims", "starbucks", "williams", "other"].sample}
-		sequence(:created_at) {|n| Faker::Time.between(5.months.ago, Time.now, :all) }
+		sequence(:created_at) {|n| Faker::Time.between(7.days.ago, Time.now, :all) }
 	end
 end

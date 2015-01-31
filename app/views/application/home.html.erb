@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1"> 
+    <title>Double Double</title>
+  </head>
+  <body>
+
+  <div class="col-lg-4 websiteTitle">
+      <h3> Double Double </h3>
+  </div>
+  <div class="sign_in_form col-lg-6">
+    <%= render "users/shared/sign_in_form" %>
+  </div>
+
+  <div class="graphsArea">
+  <%= line_chart @last_month_drinks.group_by_day(:created_at).count %>
+  </div>
+  </body>
+</html>

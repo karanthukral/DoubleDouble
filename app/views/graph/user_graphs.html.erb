@@ -1,0 +1,5 @@
+<h2><%= @user.first_name %> <%= @user.last_name %></h2>
+<div class="week_user_graph">
+  <h3>Coffee Consumption for the last 7 days</h3>
+  <%= line_chart @last_week_drinks_by_day.group_by_day(:created_at).count %>
+</div>
