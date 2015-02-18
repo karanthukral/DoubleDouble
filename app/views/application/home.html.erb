@@ -16,6 +16,7 @@
   </div>
 
   <div class="graphsArea">
+  <!-- Currently uses a global var in the application controller. Want to move it to graph controller. -->
   <%= line_chart @last_month_drinks.group_by_day(:created_at).count %>
   </div>
   </body>

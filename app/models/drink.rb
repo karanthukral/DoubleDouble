@@ -5,7 +5,7 @@ class Drink < ActiveRecord::Base
 	protected
 	def check_name
 		if !self.name
-			self.name = "coffee"
+			self.name = "coffee" # Defaults to coffee since that is the use case. Other options can be added later
 		end
 	end
 end
