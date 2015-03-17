@@ -1,28 +1,15 @@
-== README
+# Double Double
+---------------------
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## What?
+Initially intended to be built as a web app to help users track their caffeine consumption, it's being changed into a Rails backend to allow native applications to be created. 
 
-Things you may want to cover:
+## Technologies it uses?
+- Ruby on Rails
+- Devise Gem for user auth
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+## How to test?
+- Clone the repository
+- Run `bunldle install`
+- Run `bundle exec rails server`
+- Go to `localhost:3000` in your browser
